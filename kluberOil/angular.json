@@ -36,7 +36,25 @@
                 "input": "src/assets/css/interactiveVideo.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery.scrolly.min.js",
+              "src/assets/js/skel.min.js",
+              "src/assets/js/util.js",
+              "src/assets/js/main.js",
+              "src/assets/js/vendor.js",
+              "src/assets/js/app.js",
+              "src/assets/js/interactiveVideo.js",
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/jquery.scrolly.min.js",
+              "src/assets/js/skel.min.js",
+              "src/assets/js/util.js",
+              "src/assets/js/main.js",
+              "src/assets/js/vendor.js",
+              "src/assets/js/app.js",
+              "src/assets/js/interactiveVideo.js",
+            ]
           },
           "configurations": {
             "production": {
