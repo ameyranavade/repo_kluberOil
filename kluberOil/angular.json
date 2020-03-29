@@ -34,12 +34,6 @@
               },
               {
                 "input": "src/assets/css/interactiveVideo.css"
-              },
-              {
-                "input": "src/assets/css/fontawesome.css"
-              },
-              {
-                "input": "src/assets/css/bootstrap.min.css"
               }
             ],
             "scripts": []
