@@ -28,7 +28,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "src/assets/css/style.css"
+              },
+              {
+                "input": "src/assets/css/interactiveVideo.css"
+              },
+              {
+                "input": "src/assets/css/fontawesome.css"
+              },
+              {
+                "input": "src/assets/css/bootstrap.min.css"
+              }
             ],
             "scripts": []
           },

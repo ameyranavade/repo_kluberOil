@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HighbwComponent } from './highbw/highbw.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HighbwComponent
   ],
   imports: [
     BrowserModule,
