@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -10,4 +10,597 @@
 <body>
   <app-root></app-root>
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <base href="/">
+
+
+  <title>Kl&uuml;ber - Steel Plant</title>
+
+  <style>
+    li {
+      list-style-type: none !important;
+    }
+
+    li:before {
+      content: "- ";
+    }
+  </style>
+<!-- 
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/interactiveVideo.css" type="text/css" rel="stylesheet" />
+  <link href="css/fontawesome.css" type="text/css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> -->
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.scrolly.min.js"></script>
+  <script src="js/skel.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Cookie Alert -->
+  <script src="js/vendor.js" type="text/javascript"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+  <script src="js/interactiveVideo.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    (function () {
+      function id(v) {
+        return document.getElementById(v);
+      }
+
+      function loadbar() {
+        var ovrl = id("overlay"),
+          stat = id("progstat"),
+          img = document.images,
+          c = 0;
+        tot = img.length;
+
+        function imgLoaded() {
+          c += 1;
+          var perc = ((100 / tot * c) << 0) + "%";
+
+          stat.innerHTML = perc;
+          if (c === tot) return doneLoading();
+        }
+
+        function doneLoading() {
+          ovrl.style.opacity = 0;
+          setTimeout(function () {
+            ovrl.style.display = "none";
+          }, 1);
+        }
+        for (var i = 0; i < tot; i++) {
+          var tImg = new Image();
+          tImg.onload = imgLoaded;
+          tImg.onerror = imgLoaded;
+          tImg.src = img[i].src;
+        }
+      }
+      document.addEventListener('DOMContentLoaded', loadbar, false);
+    }());
+  </script>
+
+</head>
+
+
+<script>
+</script>
+
+<body onload="myFunction()">
+
+  <div class="col-md-12">
+    <app-root></app-root>
+
+    <script>
+      var interactiveVideos = {
+        "Id": "53d719d6",
+        "Parent": "",
+        "Title": "Coal power plant",
+        "Description": "",
+        "Link": "",
+        "Poster": "Plant_View_2_Static.gif",
+        "Sources": {
+          "Loop": {
+            "Mp4": "videos/Plant_View_2.mp4",
+            "Ogg": "",
+            "Webm": ""
+          },
+          "In": {
+            "Mp4": "",
+            "Ogg": "",
+            "Webm": ""
+          },
+          "Out": {
+            "Mp4": "",
+            "Ogg": "",
+            "Webm": ""
+          }
+        },
+        "LinkPosition": {
+          "Left": "",
+          "Top": ""
+        },
+        "SubVideos": [{
+          "Id": "1a7b9f31-767d-49f7-b393-9db731f19264",
+          "Parent": "53d719d6",
+          "Title": "",
+          "Description": "",
+          "Link": "",
+          "Poster": "images/new/BF_Main_Static.png",
+          "Sources": {
+            "Loop": {
+              "Mp4": "",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "In": {
+              "Mp4": "videos/BF_Main_2.mp4",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "Out": {
+              "Mp4": "videos/Blast_Furnace_Main_Reverse.mp4",
+              "Ogg": "",
+              "Webm": ""
+            }
+          },
+          "LinkPosition": {
+            "Left": "62.9",
+            "Top": "36"
+          },
+          "SubVideos": [{
+            "Id": "67acb62e-977b-40df-a6ae-03962a6f4fb5",
+            "Parent": "53d719d6-cc36-41a0-ab91-fffae280e357",
+            "Title": "Level measurement in the fly ash silo or ash bunker",
+            "Description": "In silos and bunkers, radar sensors are mainly used to determine the filling height. The vibrating level switch dependably prevents an overfilling of silos and bunkers.",
+            "Link": "/en/Applications/Energy/Coal-power-plant/Fly-ash-silo-ash-bunker",
+            "Poster": "/-/media/Images/Anwendungen/3D-Animationen/Energie/06_Aschesilo_Aschebunker_loop.ashx",
+            "Sources": {
+              "In": {
+                "Mp4": "BF_Coal_Bell_Top.mp4",
+                "Ogg": "",
+                "Webm": ""
+              },
+              "Out": {
+                "Mp4": "videos/BF_Coal_Bell_Top_reverse.mp4",
+                "Ogg": "",
+                "Webm": ""
+              }
+            },
+            "LinkPosition": {
+              "Left": "54.8",
+              "Top": "27"
+            },
+            "SubVideos": [],
+            "AdditionalLinks": []
+          }],
+          "AdditionalLinks": []
+        }, {
+          "Id": "1a7b9f31-767d-49f7-b393-9db731f19265",
+          "Parent": "53d719d6",
+          "Title": "",
+          "Description": "",
+          "Link": "",
+          "Poster": "images/Coke_Oven_Plant.png",
+          "Sources": {
+            "Loop": {
+              "Mp4": "",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "In": {
+              "Mp4": "videos/Coke_Plant_Main.mp4",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "Out": {
+              "Mp4": "videos/Coke_Plant_Main_Reverse.mp4",
+              "Ogg": "",
+              "Webm": ""
+            }
+          },
+          "LinkPosition": {
+            "Left": "87",
+            "Top": "26"
+          },
+          "SubVideos": [{
+            "Id": "67acb62e-977b-40df-a6ae-03962a6f4fb5",
+            "Parent": "1a7b9f31-767d-49f7-b393-9db731f19265",
+            "Title": "Level measurement in the fly ash silo or ash bunker",
+            "Description": "In silos and bunkers, radar sensors are mainly used to determine the filling height. The vibrating level switch dependably prevents an overfilling of silos and bunkers.",
+            "Link": "/en/Applications/Energy/Coal-power-plant/Fly-ash-silo-ash-bunker",
+            "Poster": "/-/media/Images/Anwendungen/3D-Animationen/Energie/06_Aschesilo_Aschebunker_loop.ashx",
+            "Sources": {
+              "In": {
+                "Mp4": "BF_Coal_Bell_Top.mp4",
+                "Ogg": "",
+                "Webm": ""
+              },
+              "Out": {
+                "Mp4": "videos/BF_Coal_Bell_Top_reverse.mp4",
+                "Ogg": "",
+                "Webm": ""
+              }
+            },
+            "LinkPosition": {
+              "Left": "54.8",
+              "Top": "27"
+            },
+            "SubVideos": [],
+            "AdditionalLinks": []
+          }],
+          "AdditionalLinks": []
+        }, {
+          "Id": "1a7b9f31-767d-49f7-b393-9db731f19289",
+          "Parent": "53d719d6",
+          "Title": "",
+          "Description": "",
+          "Link": "",
+          "Poster": "images/Stack_Rec_Still.png",
+          "Sources": {
+            "Loop": {
+              "Mp4": "",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "In": {
+              "Mp4": "videos/Stack_Reck_Main.mp4",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "Out": {
+              "Mp4": "videos/Stack_Reck_Main_Reverse.mp4",
+              "Ogg": "",
+              "Webm": ""
+            }
+          },
+          "LinkPosition": {
+            "Left": "89",
+            "Top": "42"
+          },
+          "SubVideos": [{
+            "Id": "67acb62e-977b-40df-a6ae-03962a6f4fb5",
+            "Parent": "1a7b9f31-767d-49f7-b393-9db731f19289",
+            "Title": "Level measurement in the fly ash silo or ash bunker",
+            "Description": "In silos and bunkers, radar sensors are mainly used to determine the filling height. The vibrating level switch dependably prevents an overfilling of silos and bunkers.",
+            "Link": "/en/Applications/Energy/Coal-power-plant/Fly-ash-silo-ash-bunker",
+            "Poster": "/-/media/Images/Anwendungen/3D-Animationen/Energie/06_Aschesilo_Aschebunker_loop.ashx",
+            "Sources": {
+              "In": {
+                "Mp4": "BF_Coal_Bell_Top.mp4",
+                "Ogg": "",
+                "Webm": ""
+              },
+              "Out": {
+                "Mp4": "videos/BF_Coal_Bell_Top_reverse.mp4",
+                "Ogg": "",
+                "Webm": ""
+              }
+            },
+            "LinkPosition": {
+              "Left": "88",
+              "Top": "42"
+            },
+            "SubVideos": [],
+            "AdditionalLinks": []
+          }],
+          "AdditionalLinks": []
+        }, {
+          "Id": "1a7b9f31-767d-49f7-b393-9db731f19266",
+          "Parent": "53d719d6",
+          "Title": "",
+          "Description": "",
+          "Link": "",
+          "Poster": "images/Cold_Rolling_Mill.png",
+          "Sources": {
+            "Loop": {
+              "Mp4": "",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "In": {
+              "Mp4": "videos/Cold_Roll_Main.mp4",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "Out": {
+              "Mp4": "videos/Cold_Roll_Main_Reverse.mp4",
+              "Ogg": "",
+              "Webm": ""
+            }
+          },
+          "LinkPosition": {
+            "Left": "18",
+            "Top": "79"
+          },
+          "SubVideos": [{
+            "Id": "67acb62e-977b-40df-a6ae-03962a6f4fb5",
+            "Parent": "1a7b9f31-767d-49f7-b393-9db731f19266",
+            "Title": "Level measurement in the fly ash silo or ash bunker",
+            "Description": "In silos and bunkers, radar sensors are mainly used to determine the filling height. The vibrating level switch dependably prevents an overfilling of silos and bunkers.",
+            "Link": "/en/Applications/Energy/Coal-power-plant/Fly-ash-silo-ash-bunker",
+            "Poster": "/-/media/Images/Anwendungen/3D-Animationen/Energie/06_Aschesilo_Aschebunker_loop.ashx",
+            "Sources": {
+              "In": {
+                "Mp4": "BF_Coal_Bell_Top.mp4",
+                "Ogg": "",
+                "Webm": ""
+              },
+              "Out": {
+                "Mp4": "videos/BF_Coal_Bell_Top_reverse.mp4",
+                "Ogg": "",
+                "Webm": ""
+              }
+            },
+            "LinkPosition": {
+              "Left": "54.8",
+              "Top": "27"
+            },
+            "SubVideos": [],
+            "AdditionalLinks": []
+          }],
+          "AdditionalLinks": []
+        }, {
+          "Id": "1a7b9f31-767d-49f7-b393-9db731f19267",
+          "Parent": "53d719d6",
+          "Title": "",
+          "Description": "",
+          "Link": "",
+          "Poster": "images/Sinter.png",
+          "Sources": {
+            "Loop": {
+              "Mp4": "",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "In": {
+              "Mp4": "videos/Sinter_Main_Cam.mp4",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "Out": {
+              "Mp4": "videos/Sinter_Main_Cam_Reverse.mp4",
+              "Ogg": "",
+              "Webm": ""
+            }
+          },
+          "LinkPosition": {
+            "Left": "79",
+            "Top": "17"
+          },
+          "SubVideos": [{
+            "Id": "67acb62e-977b-40df-a6ae-03962a6f4fb5",
+            "Parent": "1a7b9f31-767d-49f7-b393-9db731f19266",
+            "Title": "Level measurement in the fly ash silo or ash bunker",
+            "Description": "In silos and bunkers, radar sensors are mainly used to determine the filling height. The vibrating level switch dependably prevents an overfilling of silos and bunkers.",
+            "Link": "/en/Applications/Energy/Coal-power-plant/Fly-ash-silo-ash-bunker",
+            "Poster": "/-/media/Images/Anwendungen/3D-Animationen/Energie/06_Aschesilo_Aschebunker_loop.ashx",
+            "Sources": {
+              "In": {
+                "Mp4": "BF_Coal_Bell_Top.mp4",
+                "Ogg": "",
+                "Webm": ""
+              },
+              "Out": {
+                "Mp4": "videos/BF_Coal_Bell_Top_reverse.mp4",
+                "Ogg": "",
+                "Webm": ""
+              }
+            },
+            "LinkPosition": {
+              "Left": "54.8",
+              "Top": "27"
+            },
+            "SubVideos": [],
+            "AdditionalLinks": []
+          }],
+          "AdditionalLinks": []
+        }, {
+          "Id": "1a7b9f31-767d-49f7-b393-9db731f19268",
+          "Parent": "53d719d6",
+          "Title": "",
+          "Description": "",
+          "Link": "",
+          "Poster": "images/Steel_Making.png",
+          "Sources": {
+            "Loop": {
+              "Mp4": "",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "In": {
+              "Mp4": "videos/Steel_Making_Main.mp4",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "Out": {
+              "Mp4": "videos/Steel_Making_Main_Reverse.mp4",
+              "Ogg": "",
+              "Webm": ""
+            }
+          },
+          "LinkPosition": {
+            "Left": "45",
+            "Top": "50.4"
+          },
+          "SubVideos": [{
+            "Id": "67acb62e-977b-40df-a6ae-03962a6f4fb5",
+            "Parent": "1a7b9f31-767d-49f7-b393-9db731f19266",
+            "Title": "Level measurement in the fly ash silo or ash bunker",
+            "Description": "In silos and bunkers, radar sensors are mainly used to determine the filling height. The vibrating level switch dependably prevents an overfilling of silos and bunkers.",
+            "Link": "/en/Applications/Energy/Coal-power-plant/Fly-ash-silo-ash-bunker",
+            "Poster": "/-/media/Images/Anwendungen/3D-Animationen/Energie/06_Aschesilo_Aschebunker_loop.ashx",
+            "Sources": {
+              "In": {
+                "Mp4": "BF_Coal_Bell_Top.mp4",
+                "Ogg": "",
+                "Webm": ""
+              },
+              "Out": {
+                "Mp4": "videos/BF_Coal_Bell_Top_reverse.mp4",
+                "Ogg": "",
+                "Webm": ""
+              }
+            },
+            "LinkPosition": {
+              "Left": "54.8",
+              "Top": "27"
+            },
+            "SubVideos": [],
+            "AdditionalLinks": []
+          }],
+          "AdditionalLinks": []
+        }, {
+          "Id": "1a7b9f31-767d-49f7-b393-9db731f19269",
+          "Parent": "53d719d6",
+          "Title": "",
+          "Description": "",
+          "Link": "",
+          "Poster": "images/Hot_Rolling_Mill.png",
+          "Sources": {
+            "Loop": {
+              "Mp4": "",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "In": {
+              "Mp4": "videos/Hot_Rolling_Mill_Main.mp4",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "Out": {
+              "Mp4": "videos/Hot_Rolling_Mill_Main_Reverse.mp4",
+              "Ogg": "",
+              "Webm": ""
+            }
+          },
+          "LinkPosition": {
+            "Left": "18",
+            "Top": "60"
+          },
+          "SubVideos": [{
+            "Id": "67acb62e-977b-40df-a6ae-03962a6f4fb5",
+            "Parent": "1a7b9f31-767d-49f7-b393-9db731f19266",
+            "Title": "Level measurement in the fly ash silo or ash bunker",
+            "Description": "In silos and bunkers, radar sensors are mainly used to determine the filling height. The vibrating level switch dependably prevents an overfilling of silos and bunkers.",
+            "Link": "/en/Applications/Energy/Coal-power-plant/Fly-ash-silo-ash-bunker",
+            "Poster": "/-/media/Images/Anwendungen/3D-Animationen/Energie/06_Aschesilo_Aschebunker_loop.ashx",
+            "Sources": {
+              "In": {
+                "Mp4": "BF_Coal_Bell_Top.mp4",
+                "Ogg": "",
+                "Webm": ""
+              },
+              "Out": {
+                "Mp4": "videos/BF_Coal_Bell_Top_reverse.mp4",
+                "Ogg": "",
+                "Webm": ""
+              }
+            },
+            "LinkPosition": {
+              "Left": "54.8",
+              "Top": "27"
+            },
+            "SubVideos": [],
+            "AdditionalLinks": []
+          }],
+          "AdditionalLinks": []
+        }, {
+          "Id": "1a7b9f31-767d-49f7-b393-9db731f19270",
+          "Parent": "53d719d6",
+          "Title": "",
+          "Description": "",
+          "Link": "",
+          "Poster": "images/Wire_Rod.png",
+          "Sources": {
+            "Loop": {
+              "Mp4": "",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "In": {
+              "Mp4": "videos/Wire_Rod_Main.mp4",
+              "Ogg": "",
+              "Webm": ""
+            },
+            "Out": {
+              "Mp4": "videos/Wire_Rod_Main_Reverse.mp4",
+              "Ogg": "",
+              "Webm": ""
+            }
+          },
+          "LinkPosition": {
+            "Left": "35",
+            "Top": "45"
+          },
+          "SubVideos": [{
+            "Id": "67acb62e-977b-40df-a6ae-03962a6f4fb5",
+            "Parent": "1a7b9f31-767d-49f7-b393-9db731f19266",
+            "Title": "Level measurement in the fly ash silo or ash bunker",
+            "Description": "In silos and bunkers, radar sensors are mainly used to determine the filling height. The vibrating level switch dependably prevents an overfilling of silos and bunkers.",
+            "Link": "/en/Applications/Energy/Coal-power-plant/Fly-ash-silo-ash-bunker",
+            "Poster": "/-/media/Images/Anwendungen/3D-Animationen/Energie/06_Aschesilo_Aschebunker_loop.ashx",
+            "Sources": {
+              "In": {
+                "Mp4": "BF_Coal_Bell_Top.mp4",
+                "Ogg": "",
+                "Webm": ""
+              },
+              "Out": {
+                "Mp4": "videos/BF_Coal_Bell_Top_reverse.mp4",
+                "Ogg": "",
+                "Webm": ""
+              }
+            },
+            "LinkPosition": {
+              "Left": "54.8",
+              "Top": "27"
+            },
+            "SubVideos": [],
+            "AdditionalLinks": []
+          }],
+          "AdditionalLinks": []
+        }],
+        "AdditionalLinks": []
+      };
+    </script>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/skel.min.js"></script>
+
+    <script src="js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="js/main.js"></script>
+
+    <!-- Cookie Alert -->
+
+    <script src="js/vendor.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+
+    <script src="js/interactiveVideo.js" type="text/javascript"></script>
+
+  </div>
+
+
+  <!-- </div> -->
+
+</body>
+
 </html>
